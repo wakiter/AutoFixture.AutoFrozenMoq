@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.AutoFrozenMoq", "AutoFixture.AutoFrozenMoq\AutoFixture.AutoFrozenMoq.csproj", "{54AB1775-BE8A-4428-B5FA-5DBD90CC1CA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.AutoFrozenMoq.Tests", "..\..\tests\AutoFixture.AutoFrozenMoq.Tests\AutoFixture.AutoFrozenMoq.Tests.csproj", "{8DD2DC03-2247-4D0B-8058-B6EBE6247B41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54AB1775-BE8A-4428-B5FA-5DBD90CC1CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AB1775-BE8A-4428-B5FA-5DBD90CC1CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AB1775-BE8A-4428-B5FA-5DBD90CC1CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AB1775-BE8A-4428-B5FA-5DBD90CC1CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DD2DC03-2247-4D0B-8058-B6EBE6247B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD2DC03-2247-4D0B-8058-B6EBE6247B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD2DC03-2247-4D0B-8058-B6EBE6247B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD2DC03-2247-4D0B-8058-B6EBE6247B41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CD14CDD-F445-4FA5-B2C8-5E9EFF63EA2E}
+	EndGlobalSection
+EndGlobal
