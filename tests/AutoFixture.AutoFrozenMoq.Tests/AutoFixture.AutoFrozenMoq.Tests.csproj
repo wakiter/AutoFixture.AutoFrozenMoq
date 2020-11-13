@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AutoFixture.AutoFrozenMoq\AutoFixture.AutoFrozenMoq\AutoFixture.AutoFrozenMoq.csproj" />
+    <ProjectReference Include="..\..\src\AutoFixture.AutoFrozenMoq\AutoFixture.AutoFrozenMoq.csproj" />
   </ItemGroup>
 
 </Project>
