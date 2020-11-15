@@ -1,4 +1,4 @@
-name: .NET Core
+name: Auto Frozen Moq - CI 
 
 on:
   push:
