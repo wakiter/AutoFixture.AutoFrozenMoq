@@ -3,7 +3,7 @@ name: Auto Frozen Moq - Release
 on:
   workflow_run:
     workflows: ["Auto Frozen Moq - CI"]
-    branches: [ master ]
+    branches: [ main ]
     types:
       - completed
 jobs:
