@@ -19,6 +19,6 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --configuration Release --no-restore
-      - name: Publish to NuGet
+      - name: Prepare Version Number
         working-directory: releaseScripts
         run: bash ./changeVersion.sh
