@@ -18,7 +18,7 @@ if [[ $version =~ $regex ]]; then
 fi
 
 build=$((build + 1))
-newVersion = "${major}.${minor}.${build}"
+newVersion="${major}.${minor}.${build}"
 
 echo "New version: ${newVersion}"
 
