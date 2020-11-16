@@ -1,6 +1,9 @@
 #!/bin/bash
+set -e
 
 version=`cat ./version`
+
+echo "Current version is: ${version}."
 
 major=0
 minor=0
@@ -15,6 +18,11 @@ if [[ $version =~ $regex ]]; then
 fi
 
 build=$((build + 1))
+newVersion = "${major}.${minor}.${build}"
 
-echo "${major}.${minor}.${build}"
+echo "New version: ${newVersion}"
+
+echo "${major}.${minor}.${build}" > ./version
+
+
 
