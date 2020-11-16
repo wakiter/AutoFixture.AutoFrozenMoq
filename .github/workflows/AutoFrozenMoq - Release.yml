@@ -20,4 +20,4 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Publish to NuGet
-        run: sudo ./releaseScripts/changeVersion.sh
+        run: sh ./releaseScripts/changeVersion.sh
