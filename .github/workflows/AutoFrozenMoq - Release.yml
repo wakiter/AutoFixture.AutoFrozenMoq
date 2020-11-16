@@ -20,9 +20,20 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Publish to NuGet
-        uses: brandedoutcast/publish-nuget@v2
-        with:
-          PROJECT_FILE_PATH: src/AutoFixture.AutoFrozenMoq/AutoFixture.AutoFrozenMoq.csproj
-          VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
-          TAG_FORMAT: '*'
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        run: echo "version=`cat ./version` \
+\
+major=0 \
+minor=0 \
+build=0 \
+\ 
+regex='([0-9]+).([0-9]+).([0-9]+)' \
+if [[ $version =~ $regex ]]; then \
+  major='${BASH_REMATCH[1]}' \
+  minor='${BASH_REMATCH[2]}' \
+  build='${BASH_REMATCH[3]}' \
+fi \
+\
+build=$((build + 1))\
+\
+echo $build >> ./version \
+"
