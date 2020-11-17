@@ -23,4 +23,5 @@ jobs:
         working-directory: releaseScripts
         run: bash ./changeVersion.sh
       - name: Print Version Number
-        run: echo $NEWVERSION
+        run: |
+          echo $NEWVERSION
