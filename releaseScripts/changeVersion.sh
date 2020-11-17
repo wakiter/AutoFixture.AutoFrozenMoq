@@ -24,6 +24,5 @@ echo "New version: ${newVersion}"
 
 echo "${major}.${minor}.${build}" > ./version
 
-echo "::set-env name=NEWVERSION::$newVersion"
 
 
