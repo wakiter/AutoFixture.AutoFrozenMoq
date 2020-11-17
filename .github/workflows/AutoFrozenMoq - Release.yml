@@ -22,6 +22,10 @@ jobs:
       - name: Prepare Version Number
         working-directory: releaseScripts
         run: bash ./changeVersion.sh
-      - name: Print Version Number
-        run: |
-          echo $NEWVERSION
+      - name: Package Nuget
+        uses: rohith/publish-nuget@v2
+        with: 
+          PROJECT_FILE_PATH: AutoFixture.AutoFrozenMoq.sln
+          VERSION_FILE_PATH: releaseScripts/version
+          VERSION_REGEX: (.*)
+          NUGET_KEY: ${{ secrets.NUGET_KEY }}
