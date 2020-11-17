@@ -22,3 +22,5 @@ jobs:
       - name: Prepare Version Number
         working-directory: releaseScripts
         run: bash ./changeVersion.sh
+      - name: Print Version Number
+        run: echo ${newVersion}
