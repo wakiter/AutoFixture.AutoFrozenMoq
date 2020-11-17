@@ -21,7 +21,9 @@ jobs:
         run: dotnet build --configuration Release --no-restore
       - name: Prepare Version Number
         working-directory: releaseScripts
-        run: bash ./changeVersion.sh
+        run: |
+          bash ./changeVersion.sh
+          echo $NEWVERSION
       - name: Package Nuget
         uses: rohith/publish-nuget@v2
         with: 
