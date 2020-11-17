@@ -24,5 +24,7 @@ echo "New version: ${newVersion}"
 
 echo "${major}.${minor}.${build}" > ./version
 
+export NEWVERSION=$newVersion
+
 
 
