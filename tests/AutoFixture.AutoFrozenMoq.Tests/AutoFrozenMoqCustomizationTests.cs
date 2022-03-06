@@ -7,7 +7,7 @@ using Xunit;
 
 namespace AutoFixture.AutoFrozenMoq.Tests
 {
-    public class AutoFrozenMoqCustomizationTests
+    public sealed class AutoFrozenMoqCustomizationTests
     {
         [Fact]
         public void Customize_Adds_Customization_And_ResidueCollectors()
